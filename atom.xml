@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Ice Write Blog]]></title>
+  <link href="http://iceongrass.github.io/atom.xml" rel="self"/>
+  <link href="http://iceongrass.github.io/"/>
+  <updated>2013-08-20T11:10:25+08:00</updated>
+  <id>http://iceongrass.github.io/</id>
+  <author>
+    <name><![CDATA[iceongrass]]></name>
+    <email><![CDATA[iceongrass@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>

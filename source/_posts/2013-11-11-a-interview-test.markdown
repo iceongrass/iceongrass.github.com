@@ -3,7 +3,9 @@ layout: post
 title: "面试题一道：三天打渔两天晒网"
 date: 2013-11-11 15:03
 comments: true
-categories: 
+categories: Octopress
+description: "一道面试题而已，没有找到问题在哪里。。。"
+keywords: tech, C
 ---
 
 某天去某公司面试，被要求写一个程序。程序要求如下：
@@ -12,6 +14,8 @@ categories:
 
     1. 打渔的话返回1，不打渔返回0；
     2. 要有异常处理。
+
+<!--more-->
 
 俺给出的答案如下：
 

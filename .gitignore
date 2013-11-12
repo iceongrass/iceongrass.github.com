@@ -5,8 +5,8 @@
 .pygments-cache
 _deploy
 public
-sass.old
-source.old
+sass.*
+source.*
 source/_stash
 source/stylesheets/screen.css
 vendor

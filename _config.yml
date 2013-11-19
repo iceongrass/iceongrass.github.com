@@ -106,3 +106,4 @@ post_license: true
 # Please refer to http://weibo.com/tool/weiboshow to get your uid and verifier. 
 weibo_uid: 1437555551
 weibo_verifier: 5225192f
+weibo_share: true

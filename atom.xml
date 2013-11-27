@@ -4,7 +4,7 @@
   <title><![CDATA[Ice Write Blog]]></title>
   <link href="http://iceongrass.github.io/atom.xml" rel="self"/>
   <link href="http://iceongrass.github.io/"/>
-  <updated>2013-11-24T00:11:22+08:00</updated>
+  <updated>2013-11-27T17:21:19+08:00</updated>
   <id>http://iceongrass.github.io/</id>
   <author>
     <name><![CDATA[iceongrass]]></name>
@@ -12,6 +12,100 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Scala学习笔记（2）]]></title>
+    <link href="http://iceongrass.github.io/blog/2013/11/27/scalalearningnote2/"/>
+    <updated>2013-11-27T17:15:00+08:00</updated>
+    <id>http://iceongrass.github.io/blog/2013/11/27/scalalearningnote2</id>
+    <content type="html"><![CDATA[<h2>数组专题</h2>
+
+<p>无论是什么编程语言，数组无疑是最重要的数据结构之一，这节主要是关于scala中数组操作的用法和与其他语言的不同。</p>
+
+<!--more-->
+
+
+<hr />
+
+<p>Scala中，数组按照长度固定与否可以分为两类，定长的使用Array，长度有可能变化的可以使用ArrayBuffer。例如：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">nums</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Array</span><span class="o">[</span><span class="kt">Int</span><span class="o">](</span><span class="mi">10</span><span class="o">)</span>
+</span><span class='line'>  <span class="c1">// 包含10个Int对象的数组，所有元素初始化为null</span>
+</span><span class='line'><span class="k">val</span> <span class="n">s</span> <span class="k">=</span> <span class="nc">Array</span><span class="o">(</span><span class="s">&quot;Hello &quot;</span><span class="o">,</span><span class="s">&quot;World&quot;</span><span class="o">)</span>
+</span><span class='line'>  <span class="c1">// 如果数组内的元素已经确定了个数和类型就不需要new，直接用等号连接即可</span>
+</span><span class='line'><span class="n">s</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="k">=</span> <span class="s">&quot;Goodbye &quot;</span>
+</span><span class='line'>  <span class="c1">// 访问元素使用( )而不是[ ]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>对于变长数组：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">import</span> <span class="nn">scala.collection.mutable.ArrayBuffer</span>
+</span><span class='line'><span class="k">val</span> <span class="n">b</span> <span class="k">=</span> <span class="nc">ArragBuffer</span><span class="o">[</span><span class="kt">Int</span><span class="o">]()</span>
+</span><span class='line'>  <span class="c1">// 定义一个空的整形数组缓冲</span>
+</span><span class='line'><span class="n">b</span> <span class="o">+=</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">)</span>
+</span><span class='line'>  <span class="c1">// 向缓冲区的尾部加入元素</span>
+</span><span class='line'><span class="n">b</span> <span class="o">+=</span> <span class="nc">Array</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span><span class="mi">7</span><span class="o">)</span>
+</span><span class='line'>  <span class="c1">// 向缓冲区的尾部加入一个数组</span>
+</span><span class='line'><span class="n">b</span><span class="o">.</span><span class="n">trimEnd</span><span class="o">(</span><span class="mi">5</span><span class="o">)</span>
+</span><span class='line'>  <span class="c1">// 移除缓冲区的最后五个元素</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>加入、删除等方法的名称与java的一样，这里不过多描述。需要提一下的是数组和数组缓冲是可以相互转化的。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="n">b</span><span class="o">.</span><span class="n">toArray</span>  <span class="c1">// Array(1,2)</span>
+</span><span class='line'><span class="n">s</span><span class="o">.</span><span class="n">toBuffer</span> <span class="c1">// ArrayBuffer(&quot;Goodbye &quot;, &quot;World)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>有一个方法比较有意思，原型是</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">def</span> <span class="n">count</span><span class="o">(</span><span class="n">p</span><span class="k">:</span><span class="o">(</span><span class="kt">A</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>一开始看字面意思还以为是计算数组中的元素个数，其实不是。这个方法接受一个返回值为Boolean型的函数（或许表达式更为合适）作为参数，作用是统计列表中有多少元素在应用该函数后返回true。比如说<code>a.count(_ &gt; 0)</code>就用于统计数组a中有多少元素是正数。</p>
+
+<p>Scala同样支持多维数组，定义方法为：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">matrix</span> <span class="k">=</span> <span class="nc">Array</span><span class="o">.</span><span class="n">hi</span><span class="o">[</span><span class="kt">Double</span><span class="o">](</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">)</span>  <span class="c1">// 三行四列</span>
+</span><span class='line'><span class="n">matrix</span><span class="o">(</span><span class="mi">2</span><span class="o">)(</span><span class="mi">3</span><span class="o">)</span> <span class="k">=</span> <span class="mi">12</span>                   <span class="c1">// 对第二行三列的元素赋值</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>有意思的是可以创建不规则的数组，每一行长度都不相同：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">triangle</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Array</span><span class="o">[</span><span class="kt">Array</span><span class="o">[</span><span class="kt">Int</span><span class="o">]](</span><span class="mi">10</span><span class="o">)</span>
+</span><span class='line'><span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k">&lt;-</span> <span class="mi">0</span> <span class="n">until</span> <span class="n">tiangle</span><span class="o">.</span><span class="n">lenght</span><span class="o">)</span>
+</span><span class='line'>  <span class="n">triangle</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Array</span><span class="o">[</span><span class="kt">Int</span><span class="o">]</span> <span class="o">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Scala 学习笔记（1）]]></title>

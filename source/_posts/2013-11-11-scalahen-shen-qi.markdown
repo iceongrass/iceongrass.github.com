@@ -3,7 +3,7 @@ layout: post
 title: "Scala很神奇"
 date: 2013-11-11 01:25
 comments: true
-categories: 
+categories: Scala 
 ---
 
 起初听到这个名词是在公司里，组内的技术大牛说这玩意是未来的语言。各种社区里也把scala吹的是神乎其神，可惜一整年忙于乱七八糟的事情一直没有机会深入了解。托csdn的福，没有让我赋闲在家的这段时间过于无聊，也开始接触了这门全新的语言。

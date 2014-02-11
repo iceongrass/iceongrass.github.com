@@ -3,7 +3,7 @@ layout: post
 title: "UX速成教程-概要"
 date: 2014-02-09 19:46
 comments: true
-categories: UX
+categories: UX 翻译
 ---
 前两天看到有人分享一个叫Joel Marsh的哥们写了一个为期31天的关于用户体验设计课程，文字短小精干，语言言简意赅，举例恰如其分，语言风趣幽默，于是产生了翻译过来与诸君共赏的想法。
 
@@ -11,9 +11,9 @@ categories: UX
 
 概要
 ---
-我2014年的新年愿望是让更多的人加入用户体验（UX）设计的行业。在过去的一月份里我每天发布一课，已经吸引了数以万计朋友们的关注。
-
-您能从下文的链接里找到全部的31节课程的内容。
+> 我2014年的新年愿望是让更多的人加入用户体验（UX）设计的行业。在过去的一月份里我每天发布一课，已经吸引了数以万计朋友们的关注。
+>
+> 您能从下文的链接里找到全部的31节课程的内容。
 <!--more-->
 ---
 ### UX的基本原则：从哪儿开始
@@ -87,9 +87,9 @@ categories: UX
 
 [1]:http://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals
 [2]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-1-of-31
-[3]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-2-of-31
-[4]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-3-of-31
-[5]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-4-of-31
+[3]:http://thehipperelement.com/post/71993245690/daily-ux-crash-course-2-of-31
+[4]:http://thehipperelement.com/post/72080847673/daily-ux-crash-course-3-of-31
+[5]:http://thehipperelement.com/post/72215356367/daily-ux-crash-course-4-of-31
 [6]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-5-of-31
 [7]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-6-of-31
 [8]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-7-of-31
@@ -118,8 +118,8 @@ categories: UX
 [31]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-30-of-31
 [32]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-31-of-31
 [33]:http://iceongrass.com/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr
-[34]:http://iceongrass.com/blog/#
-[35]:http://iceongrass.com/blog/#
+[34]:http://iceongrass.com/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs
+[35]:/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs
 [36]:http://iceongrass.com/blog/#
 [37]:http://iceongrass.com/blog/#
 [38]:http://iceongrass.com/blog/#

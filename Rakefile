@@ -17,7 +17,8 @@ deploy_branch  = "master"
 ## -- Misc Configs -- ##
 
 public_dir      = "public"    # compiled site directory
-source_dir      = "source"    # source file directory
+source_dir      = "source"
+source_Miscdir  = "source"    # source file directory
 blog_index_dir  = 'source'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
@@ -26,7 +27,10 @@ themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
-
+editor          = "open"
+# open , use the default editor
+# open -a Mou, use Mou open the blog
+# subl, use sublime Text2 open the blog
 
 desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
 task :install, :theme do |t, args|
@@ -81,6 +85,9 @@ task :preview do
   compassPid = Process.spawn("compass watch")
   rackupPid = Process.spawn("rackup --port #{server_port}")
 
+  # preview in the web browser automatically
+  system "sleep 2; open http://localhost:#{server_port}/"
+
   trap("INT") {
     [jekyllPid, compassPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
     exit 0
@@ -93,7 +100,7 @@ end
 desc "Begin a new post in #{source_dir}/#{posts_dir}"
 task :new_post, :title do |t, args|
   if args.title
-    title = args.titlenew_post
+    title = args.title
   else
     title = get_stdin("Enter a title for your post: ")
   end
@@ -113,6 +120,39 @@ task :new_post, :title do |t, args|
     post.puts "categories: "
     post.puts "---"
   end
+
+  if #{editor}
+    system "#{editor} #{filename}"
+  end
+
+end
+
+desc "Begin a new post in #{source_dir}/#{posts_dir} with Alias"
+task :post, :title, :title_alias do |t, args|
+  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
+  mkdir_p "#{source_dir}/#{posts_dir}"
+  args.with_defaults(:title => 'new-post')
+  title = args.title
+  title_alias = args.title_alias
+  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  puts "Creating new post: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: post"
+    post.puts "title: \"#{title_alias}\""
+    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+    post.puts "comments: true"
+    post.puts "categories: "
+    post.puts "---"
+  end
+
+  if #{editor}
+    system "#{editor} #{filename}"
+  end
+
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -397,27 +437,4 @@ desc "list tasks"
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
-end
-
-desc "Begin a new post in #{source_dir}/#{posts_dir} with Alias"
-task :post, :title, :title_alias do |t, args|
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
-  mkdir_p "#{source_dir}/#{posts_dir}"
-  args.with_defaults(:title => 'new-post')
-  title = args.title
-  title_alias = args.title_alias
-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
-  end
-  puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title_alias}\""
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
-    post.puts "comments: true"
-    post.puts "categories: "
-    post.puts "---"
-  end
 end

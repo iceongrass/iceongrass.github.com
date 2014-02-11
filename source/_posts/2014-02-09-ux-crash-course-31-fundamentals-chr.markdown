@@ -24,8 +24,8 @@ categories: UX 翻译
 ### 总体介绍 & 关键概念 (Introduction & Key Ideas)
 
 ######1— [啥叫用户体验][33]（[What is UX?][2]）
-######2— [用户目标 & 业务目标][3] ([User Goals & Business Goals][3])
-######3— [用户体验的五个要素][4] ([The 5 Main Ingredients of UX][4])
+######2— [用户目标 & 业务目标][34] ([User Goals & Business Goals][3])
+######3— [用户体验的五个要素][34] ([The 5 Main Ingredients of UX][4])
 
 ****
 ### 如何理解用户 (How to Understand Users)
@@ -117,8 +117,8 @@ categories: UX 翻译
 [30]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-29-of-31
 [31]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-30-of-31
 [32]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-31-of-31
-[33]:http://iceongrass.com/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr
-[34]:http://iceongrass.com/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs
+[33]:/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr
+[34]:/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs
 [35]:/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs
 [36]:http://iceongrass.com/blog/#
 [37]:http://iceongrass.com/blog/#

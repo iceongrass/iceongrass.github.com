@@ -33,7 +33,7 @@ categories: UX 翻译
 ****
 ### 如何理解用户 (How to Understand Users)
 
-######4— [啥是用户研究][5] ([What is User Research?][5])
+######4— [啥是用户研究][36] ([What is User Research?][5])
 ######5— [提问的窍门][6] ([How to Ask People Questions][6]) 
 ######6— [建个用户档案][7] ([Creating User Profiles][7])
 ######7— [针对设备设计][8] ([Designing for Devices][8])
@@ -92,7 +92,7 @@ categories: UX 翻译
 [2]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-1-of-31
 [3]:http://thehipperelement.com/post/71993245690/daily-ux-crash-course-2-of-31
 [4]:http://thehipperelement.com/post/72080847673/daily-ux-crash-course-3-of-31
-[5]:http://thehipperelement.com/post/72215356367/daily-ux-crash-course-4-of-31
+[5]:http://thehipperelement.com/post/72332896118/daily-ux-crash-course-4-of-31
 [6]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-5-of-31
 [7]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-6-of-31
 [8]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-7-of-31
@@ -123,7 +123,7 @@ categories: UX 翻译
 [33]:/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr
 [34]:/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs
 [35]:/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs
-[36]:http://iceongrass.com/blog/#
+[36]:/blog/2014/02/14/daily-ux-crash-course-4-of-31-chs
 [37]:http://iceongrass.com/blog/#
 [38]:http://iceongrass.com/blog/#
 [39]:http://iceongrass.com/blog/#

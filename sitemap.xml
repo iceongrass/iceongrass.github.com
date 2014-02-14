@@ -28,7 +28,7 @@
         <loc>
             http://iceongrass.github.io/blog/2014/02/09/ux-crash-course-31-fundamentals-chr/
         </loc>
-        <lastmod>2014-02-11T23:48:50+08:00</lastmod>
+        <lastmod>2014-02-14T23:34:51+08:00</lastmod>
     </url>
     <url>
         <loc>http://iceongrass.github.io/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/</loc>
@@ -40,7 +40,11 @@
     </url>
     <url>
         <loc>http://iceongrass.github.io/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs/</loc>
-        <lastmod>2014-02-11T23:25:44+08:00</lastmod>
+        <lastmod>2014-02-14T23:42:31+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://iceongrass.github.io/blog/2014/02/14/daily-ux-crash-course-4-of-31-chs/</loc>
+        <lastmod>2014-02-14T23:43:48+08:00</lastmod>
     </url>
     <url>
         <loc>http://iceongrass.github.io/404.html</loc>
@@ -52,11 +56,11 @@
     </url>
     <url>
         <loc>http://iceongrass.github.io/archives/</loc>
-        <lastmod>2014-02-11T23:48:50+08:00</lastmod>
+        <lastmod>2014-02-14T23:43:48+08:00</lastmod>
     </url>
     <url>
         <loc>http://iceongrass.github.io/blog/archives/</loc>
-        <lastmod>2014-02-11T23:48:50+08:00</lastmod>
+        <lastmod>2014-02-14T23:43:48+08:00</lastmod>
     </url>
     <url>
         <loc>http://iceongrass.github.io/first-page/</loc>
@@ -64,7 +68,7 @@
     </url>
     <url>
         <loc>http://iceongrass.github.io/</loc>
-        <lastmod>2014-02-11T23:48:50+08:00</lastmod>
+        <lastmod>2014-02-14T23:43:48+08:00</lastmod>
     </url>
     <url>
         <loc>http://iceongrass.github.io/robots.txt</loc>

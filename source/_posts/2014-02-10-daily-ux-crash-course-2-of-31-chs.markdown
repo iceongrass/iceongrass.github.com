@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "每日UX速成课-2 of 31"
+title: "【转译】每日UX速成课-2 of 31"
 date: 2014-02-10 21:54
 comments: true
 categories: UX 翻译

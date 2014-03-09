@@ -124,7 +124,7 @@ categories: UX 翻译
 [34]:/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs
 [35]:/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs
 [36]:/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs
-[37]:http://iceongrass.com/blog/#
+[37]:/blog/2014/02/23/daily-ux-crash-course-5-of-31-chs
 [38]:http://iceongrass.com/blog/#
 [39]:http://iceongrass.com/blog/#
 [40]:http://iceongrass.com/blog/#

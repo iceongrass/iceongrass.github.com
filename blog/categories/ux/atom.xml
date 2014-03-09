@@ -4,7 +4,7 @@
   <title><![CDATA[Category: UX | Ice Write Blog]]></title>
   <link href="http://iceongrass.github.io/blog/categories/ux/atom.xml" rel="self"/>
   <link href="http://iceongrass.github.io/"/>
-  <updated>2014-02-25T23:47:49+08:00</updated>
+  <updated>2014-03-09T20:41:46+08:00</updated>
   <id>http://iceongrass.github.io/</id>
   <author>
     <name><![CDATA[iceongrass]]></name>
@@ -14,13 +14,67 @@
 
   
   <entry>
+    <title type="html"><![CDATA[【转译】每日UX速成课-5 of 31]]></title>
+    <link href="http://iceongrass.github.io/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs/"/>
+    <updated>2014-03-09T18:00:00+08:00</updated>
+    <id>http://iceongrass.github.io/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs</id>
+    <content type="html"><![CDATA[<blockquote><p>在用户体验的世界观里——尤其是在面对一些新鲜事物的时候——你需要从货真价实的活人身上获得一些信息。所以，今天我们来学习：</p></blockquote>
+
+<h2>如何向人们提问</h2>
+
+<hr />
+
+<p>（如果您一不小心错过了第一课，您也许会更希望<a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">从头开始</a>）</p>
+
+<h3>三种提问的基本类型：</h3>
+
+<p><strong>开放型问题</strong> —— “你如何描述我？” —— 这类问题的答案可以很宽泛，如果你需要收集你所能得到的所有的反馈的时候，这种问题比较合适。</p>
+
+<p><strong>导向型问题</strong> —— “我最性感的部位是哪里？” —— 这种问题把答案限定在一定的范围内。我举的例子里假设我有一些部位比较性感，尽管这不一定是真的！<em>要注意：</em>这类问题也有可能会把你一些你想要的答案排除在外！</p>
+
+<p><strong>封闭型问题</strong> —— “我的肘子和膝盖相比，哪个更性感些？” —— 这类问题提供了一个选择。是或者不是，这个或是那个。但是要谨记着：如果选项很蠢，那结果也不会聪明。
+ <!--more--></p>
+
+<hr />
+
+<h3>几种主观调研的提问方式：</h3>
+
+<p><strong>采访</strong> —— 找一些人来问他们一系列问题，一个人一个人的问。</p>
+
+<p><strong>观察</strong> —— 给人们一些任务或者指令，在不提供任何帮助的情况下看他们如何使用你的设计。在这之后，你可以问他们问题。</p>
+
+<p><strong>小组讨论</strong> —— 找一群人，让他们一起坐在屋子里讨论你的问题。注意：在一个团队中，自信的人通常能够说服其他没那么自信的人，还会有随机数量的各种不靠谱的人出现，这也就是在现实世界里我宁可火烧屁股也不会采用这种方式去找答案的原因。</p>
+
+<p><strong>问卷调查</strong> —— 做一个表格，让人们可以在纸面上或者网上作答。真诚的让他们觉得这些调查都是匿名的，这非常有用。</p>
+
+<p><strong>卡片分类</strong> —— 分给每个人一组概念或者分类（在卡片或便签上），总之就是些可以通过排列产生些有意义的组合的东西。当一些人完成了排列后你大概就会知道你的菜单项该长什么样了。<strong><em>高级技巧：</em></strong> <em>别对你的同事用这种方法，找些正常的用户。</em></p>
+
+<p><strong>Google</strong> —— 现在你能够从网络世界中获得的有意义的信息多简直难以想象啊！而且还是免费的！！</p>
+
+<hr />
+
+<h3>以下信息很重要哦：</h3>
+
+<blockquote><p>问相同的问题，通过相同的方式，对每一个人。 <br/>
+避免干扰型的问题和建议型的回答。<br/>
+为避免尴尬人们可能会撒谎，或者你所想要的本身就是某个特定的答案。<br/>
+采访时要记笔记，或者录下整个过程。永远不要相信你的记忆，永远！<br/>
+不要吃黄颜色的雪……（老外的原话真的就是“Don’t eat yellow snow.” &ndash;_^bbb）</p></blockquote>
+
+<hr />
+
+<p><strong>明天我们将要学习的是如何通过你的调研去[创建用户档案]（#）…</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[【转译】每日UX速成课-4 of 31]]></title>
     <link href="http://iceongrass.github.io/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs/"/>
     <updated>2014-02-23T20:35:00+08:00</updated>
     <id>http://iceongrass.github.io/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs</id>
     <content type="html"><![CDATA[<blockquote><p>啊哈，用户！UX太阳系中的太阳，对咱们来说却是荆棘。<strong>永远不要责怪用户</strong>，这是UX界的一条神圣法则，即使——让我们多少坦诚些——有时候这种欲望真TND难以抑制。尽管如此，当你有了这样的感觉的时候恰恰说明你并没有理解你的用户，所以今天我们将要学习：</p></blockquote>
 
-<h2><strong>什么是用户调研</strong></h2>
+<h2>什么是用户调研</h2>
 
 <hr />
 
@@ -28,14 +82,14 @@
 
 <p>不同的人们会说用户调研在进展过程中是处于不同平面的。有些人说应该调研先，另一些人有说应该先画些草图然后再开始，还有些人说应该先搞个原型机出来再做这个。</p>
 
-<!--more-->
-
-
 <p><strong>有些人、另一些人和还有些人，他们都是对的。</strong>用户调研这件事再任何时候都不回不合时宜。应该尽早做，经常做。</p>
 
 <p><strong>问题的关键不是什么时候做，而是怎么做。</strong>也可以说成，我们究竟想要从用户身上学到什么。</p>
 
 <p>通过对人们的研究，你通常能够得到两大类的信息：主观的和客观的。</p>
+
+<!--more-->
+
 
 <hr />
 
@@ -325,131 +379,6 @@
 <hr />
 
 <p>明天我们将学习<a href="/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs">两种可以改变您的设计理念的用户体验的目标</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[【转译】UX速成教程-概要]]></title>
-    <link href="http://iceongrass.github.io/blog/2014/02/09/ux-crash-course-31-fundamentals-chr/"/>
-    <updated>2014-02-09T19:46:00+08:00</updated>
-    <id>http://iceongrass.github.io/blog/2014/02/09/ux-crash-course-31-fundamentals-chr</id>
-    <content type="html"><![CDATA[<p>前两天看到有人分享一个叫Joel Marsh的哥们写了一个为期31天的关于用户体验设计课程，文字短小精干，语言言简意赅，举例恰如其分，语言风趣幽默，于是产生了翻译过来与诸君共赏的想法。</p>
-
-<p>原文地址请戳：<font color="red"><a href="http://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals">戳我戳我</a></font></p>
-
-<h2>概要</h2>
-
-<blockquote><p>我2014年的新年愿望是让更多的人加入用户体验（UX）设计的行业。在过去的一月份里我每天发布一课，已经吸引了数以万计朋友们的关注。</p>
-
-<p>您能从下文的链接里找到全部的31节课程的内容。</p></blockquote>
-
-<!--more-->
-
-
-<hr />
-
-<h3>UX的基本原则：从哪儿开始</h3>
-
-<p>下面的长长的列表并不是所有您能从UX中所学习到的内容，这只不过是个概述，一个能够帮助您尽可能快的从一只鸭蛋变成打倒小怪物的凹凸曼。您将从本课程中获得有关UX的几个主要组成部分的实际体验，此外，本课程还将告诉您从哪里可以学到更多，如果您希望的话。课程的顺序遵循实际的用户体验设计过程（好吧，或多或少遵循。。。），您可以按照自己的喜好去学习自己在意的内容。课程的每个章节同时也是相对独立的，随便的拖几个丢进您浏览器的书签页中作为参考吧！</p>
-
-<p><strong>注意：</strong><br/>
-  下面链接中，中文标题（已翻译的）对应是中文的链接，英文标题对应的是原文链接。</p>
-
-<hr />
-
-<h3>总体介绍 &amp; 关键概念 (Introduction &amp; Key Ideas)</h3>
-
-<h6>1— <a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr">啥叫用户体验</a>（<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-1-of-31">What is UX?</a>）</h6>
-
-<h6>2— <a href="/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs">用户目标 &amp; 业务目标</a> (<a href="http://thehipperelement.com/post/71993245690/daily-ux-crash-course-2-of-31">User Goals &amp; Business Goals</a>)</h6>
-
-<h6>3— <a href="/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs">用户体验的五个要素</a> (<a href="http://thehipperelement.com/post/72080847673/daily-ux-crash-course-3-of-31">The 5 Main Ingredients of UX</a>)</h6>
-
-<hr />
-
-<h3>如何理解用户 (How to Understand Users)</h3>
-
-<h6>4— <a href="/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs">啥是用户研究</a> (<a href="http://thehipperelement.com/post/72215356367/daily-ux-crash-course-4-of-31">What is User Research?</a>)</h6>
-
-<h6>5— <a href="http://thehipperelement.com/post/72332896118/daily-ux-crash-course-5-of-31">提问的窍门</a> (<a href="http://thehipperelement.com/post/72332896118/daily-ux-crash-course-5-of-31">How to Ask People Questions</a>)</h6>
-
-<h6>6— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-6-of-31">建个用户档案</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-6-of-31">Creating User Profiles</a>)</h6>
-
-<h6>7— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-7-of-31">针对设备设计</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-7-of-31">Designing for Devices</a>)</h6>
-
-<h6>8— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-8-of-31">设计模板</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-8-of-31">Design Patterns</a>)</h6>
-
-<hr />
-
-<h3>信息架构 (Information Architecture)</h3>
-
-<h6>9— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-9-of-31">啥是信息框架</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-9-of-31">What is Information Architecture?</a>)</h6>
-
-<h6>10— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-10-of-31">用户故事 &amp; 信息框架的种类</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-10-of-31">User Stories &amp; Types of Information Archiecture</a>)</h6>
-
-<h6>11— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-11-of-31">什么是线框</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-11-of-31">What is Wireframe</a>)</h6>
-
-<hr />
-
-<h3>视觉设计原则 (Visual Design Principles)</h3>
-
-<h6>12— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-12-of-31">视觉的权重，对比和深度</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-12-of-31">Visual Weight, Contrast &amp; Depth</a>)</h6>
-
-<h6>13— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-13-of-31">色彩</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-13-of-31">Colour</a>)</h6>
-
-<h6>14— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-14-of-31">重复和模式突破</a>（<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-14-of-31">Repetition &amp; Pattern Breaking</a>）</h6>
-
-<h6>15— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-15-of-31">线张力和边部张力</a>（<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-15-of-31">Line Tention &amp; Edge Tension</a>）</h6>
-
-<h6>16— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-16-of-31">阵列和临近</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-16-of-31">Alignment &amp; Proximity</a>)</h6>
-
-<hr />
-
-<h3>功能布局设计 (Functional Layout Design)</h3>
-
-<h6>17— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-17-of-31">Z-模板，F-模板和视觉层次</a>(<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-17-of-31">Z-Pattern, F-Pattern, and Visual Hierarchy</a>)</h6>
-
-<h6>18— <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-18-of-31">浏览，搜索和发现</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-18-of-31">Browsing vs. Searching vs. Discovery</a>)</h6>
-
-<h6>19- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-19-of-31">页框</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-19-of-31">Page Framework</a>)</h6>
-
-<h6>20- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-20-of-31">折叠，图片和大标题</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-20-of-31">The Fold, Images, &amp; Headlines</a>)</h6>
-
-<h6>21- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-21-of-31">交互轴</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-21-of-31">The Axis of Interaction</a>)</h6>
-
-<h6>22- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-22-of-31">表单</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-22-of-31">Forms</a>)</h6>
-
-<h6>23- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-23-of-31">CTA，说明和标签</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-23-of-31">Calls-to-Action, Instructions &amp; Labels</a>)</h6>
-
-<h6>24- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-24-of-31">主要按钮和次要按钮</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-24-of-31">Primary &amp; Secondary Buttons</a>)</h6>
-
-<hr />
-
-<h3>用户心理学 (User Psychology)</h3>
-
-<h6>25- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-25-of-31">条件反射</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-25-of-31">Conditioning</a>)</h6>
-
-<h6>26- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-26-of-31">劝化</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-26-of-31">Persuasion</a>)</h6>
-
-<h6>27- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-27-of-31">让体验改变体验</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-27-of-31">How Experience Changes Experience</a>)</h6>
-
-<hr />
-
-<h3>用数据来设计 (Designing with Data)</h3>
-
-<h6>28- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-28-of-31">啥是数据</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-28-of-31">What is Data?</a>)</h6>
-
-<h6>29- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-29-of-31">概要统计</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-29-of-31">Summary Statistics</a>)</h6>
-
-<h6>30- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-30-of-31">图的形状</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-30-of-31">Graph Shapes</a>)</h6>
-
-<h6>31- <a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-31-of-31">A/B测试</a> (<a href="http://thehipperelement.com/post/71886924188/daily-ux-crash-course-31-of-31">A/B Tests</a>)</h6>
-
-<hr />
-
-<h4>欢迎您把本文分享给其他对用户体验感兴趣的朋友们！</h4>
-
-<p>如果您希望能够接触到更多有关UX的新奇的小玩意，欢迎关注<a href="http://thehipperelement.com/">作者的博客</a>，或者您也可以自己通过<a href="http://www.twitter.com/hipperelement">Twitter</a>找到这个有趣的家伙。</p>
 ]]></content>
   </entry>
   

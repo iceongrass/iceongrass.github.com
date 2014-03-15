@@ -5,11 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Scala 学习笔记（1） - Ice Write Blog</title>
+  <title>【转译】每日UX速成课-6 of 31 - Ice Write Blog</title>
   <meta name="author" content="iceongrass">
 
   
-  <meta name="description" content="接触Scala已经有一段时间时间了，但是没有从基础开始学起总是觉得缺些什么。于是入手了《快学Scala》准备系统学习，顺便一边学一边记记笔记吧。 语法上的差异 简单的语法方面的内容，之前的《Scala很神奇》中简单的提到了一些，总结一下的话大概有这么几点： 除了val（常量）和var（变量）以外， &hellip;">
+  <meta name="description" content="正如营销人员有着一定的目标受众，UX设计师也有用户模型/特征1:基于调研的对用户的描述。不过我们说的跟这些个很不一样。
+所以我们今天聊点东西，关于： 建立用户角色模型 （如果您一不小心错过了第一课，您也许会更希望从头开始) 首先，让我们来确定下那些不是模型或特征： 人格的类型
+人口统计
+你的“ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://iceongrass.github.io/blog/2013/11/23/scalastudynote1">
+  <link rel="canonical" href="http://iceongrass.github.io/blog/2014/03/12/daily-ux-crash-course-6-of-31">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Ice Write Blog" type="application/atom+xml">
@@ -80,7 +83,7 @@
   
   <header>
     
-      <h1 class="entry-title">Scala 学习笔记（1）</h1>
+      <h1 class="entry-title">【转译】每日UX速成课-6 of 31</h1>
     
     
       <p class="meta">
@@ -96,7 +99,7 @@
   
 
 
-<time datetime="2013-11-23T22:54:00+08:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2013</time>
+<time datetime="2014-03-12T20:25:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2014</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -105,77 +108,86 @@
   </header>
 
 
-<div class="entry-content"><p>接触Scala已经有一段时间时间了，但是没有从基础开始学起总是觉得缺些什么。于是入手了《快学Scala》准备系统学习，顺便一边学一边记记笔记吧。</p>
+<div class="entry-content"><blockquote><p>正如营销人员有着一定的目标受众，UX设计师也有用户模型/特征<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>:基于调研的对用户的描述。不过我们说的跟这些个很不一样。<br/>
+所以我们今天聊点东西，关于：</p></blockquote>
 
-<!--more-->
-
-
-<hr />
-
-<h2>语法上的差异</h2>
-
-<p>简单的语法方面的内容，之前的<a href="http://iceongrass.com/blog/2013/11/11/scalahen-shen-qi/">《Scala很神奇》</a>中简单的提到了一些，总结一下的话大概有这么几点：</p>
-
-<ul>
-<li>除了val（常量）和var（变量）以外，在scala shell中的任何代码段和表达式都会被分配给一个名称，可以通过这些明称直接访问名称内的值，比如说</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">tmp</span> <span class="k">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
-</span><span class='line'><span class="n">res0</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">19</span>
-</span><span class='line'><span class="n">scala</span><span class="o">&gt;</span> <span class="n">res0</span> <span class="o">+</span> <span class="mi">8</span>
-</span><span class='line'><span class="n">res1</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">27</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>如上例所示，变量和函数在声明的时候并不需要人为指定变量类型（递归函数除外）。但若要指定类型可以这样：</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">def</span> <span class="n">sum</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><p>数据类型方面，区别于java，scala中没有基本类型，所有的类型（包括Int，Float，Boolean等）都是类。</p></li>
-<li><p>关于操作符，个人感觉scala中的设计到运算操作符似乎全都被重载过。最典型的一个表达式<code>a + b</code>实际上可以理解为<code>a.+(b)</code>。实际上操作符<code>+</code>本身已经不是个运算符了，而是一个Int对象a的方法。这在Java中是不被允许的。（所以从这个角度来讲，scala要比java更加面向对象的）</p></li>
-<li><p>引用外部库的时候，java库是可以直接import使用的，过程中的区别大概只是如果你想<code>import java.lang.math.*</code>，那么现在你需要<code>import java.lang.math._</code></p></li>
-</ul>
-
-
-<p>这当然不全了，我才读到第三章而已，以后发现了再补充哈。</p>
+<h2><strong>建立用户角色模型</strong></h2>
 
 <hr />
 
-<h2>代码结构和函数</h2>
+<br>
 
-<p>相对于Java、C++中语句（执行动作）和表达式（数值计算）作用的不同，scala中所有的语法结构似乎都是为了求值而存在的。这里我也总结了几点差异：</p>
 
+<p>（如果您一不小心错过了第一课，您也许会更希望<a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">从头开始</a>)</p>
+
+<h3><strong>首先，让我们来确定下那些不是模型或特征：</strong></h3>
+
+<p>人格的类型<br/>
+人口统计<br/>
+你的“品牌故事”中的角色<br/>
+由你的过往经验所产生的成见<br/>
+表面的或直观的偏见<br/>
+概念<br/>
+预言</p>
+
+<hr />
+
+<br>
+
+
+<h3><strong>那么什么才是用户的角色模型呢？</strong></h3>
+
+<p>我们所说的角色模型可以用来描述一个目标，一个期望，一种动机，或是人们的某种行为。人们为啥访问你的网站？他们需要什么样的信息？是什么让他们神经兮兮的？诸如此类。</p>
+
+<p>所有你所想要的信息都应该在你的调研和数据中。如果你不能从问卷和数据中把他们抽取出来，那你就是在瞎搞，最好马上就停下。</p>
+
+<hr />
+
+<br>
+
+
+<p><strong>不好的模型：</strong>角色A，女性，年纪在35-45之间，教育和收入水平中等偏上。她们通常有至少一个孩子，至少拥有一辆新车。她们友好开朗，有事业型，而且通常习惯于右脑思考问题。</p>
+
+<p><strong>为啥说它不好：</strong>如果你只是个卖广告的，那这应该是个不错的模型，但要是站在用户体验的角度来看，那基本上是没用的东西。为啥？因为这个模型中的任何特性点都没有给你留说“不”的空间。哪一类的特性是35-45岁的女性所需要的呢？啥都有可能嘛！</p>
+
+<hr />
+
+<br>
+
+
+<p><strong>好的模型：</strong>角色A，以为经验十足的管理者，通常专注于一个或两个专业领域。他们经常会访问我们的页面，但是他们时间很紧，所以他们多数情况下是在“收集”用来在周末阅读的内容。他们通常都是多产的社交媒体分享者，频繁地活跃在微博和大街网<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>。他们会觉得自己是意见领袖，所以通常都很注重公众形象。</p>
+
+<p><strong>为啥这个就有用：</strong>现在你有了很多可用的信息！你知道了内容宽泛没有干货的页面是不会受欢迎的，你懂得了自我展示是很重要的功能，于是了解了应该基于什么去设定你的内容分类。他们需要能够很容易的接入和分享，而且只有一些特定类型社交内容的分享会被涉及到。</p>
+
+<p>这样你也可以在跟facebook谈判的额时候说“不”了，因为这些用户根本不会在那玩意上面花时间；你也可以了解到，摘要型的邮件也会比频繁的通知效果要好，因为这些人们本来就已经很缺时间了。</p>
+
+<hr />
+
+<br>
+
+
+<h3><strong>想想哪些是理想的用户！</strong></h3>
+
+<p>当你考虑到特性的设计的时候，要考虑一下现实生活中你所见过的最有价值的一类用户。这样做并不是为了支持现有的用户行为，而是推动这些用户，让他们自己向“理想型”用户转变。</p>
+
+<p>同样需要你谨记的，所有的用户都是不一样的！你可能将会把用户们分成不用的行为类型组，那么所有的这些类型组都会值得你为他们建立一个好的角色模型。</p>
+
+<hr />
+
+<br>
+
+
+<h3>在明天的课程中我们将会学习<a href="#">如何基于不同的设备设计</a></h3>
+<div class="footnotes">
+<hr/>
 <ol>
-<li>if表达式是带值的。</li>
-<li>代码块也带值，一般式最后一个表达式的计算结果。</li>
-<li><code>;</code>这个东西在scala中是不必要的。你当然可以像是在java中那样使用<code>;</code>，但如果你不是想把多个表达式放在同一行的话，那基本上是没必要用的。</li>
-<li>void类型在scala中是Unit。</li>
-<li>return这个东西尽量不要出现，默认语法块的最后一个表达式回返回计算值。</li>
-<li>没有编译检查。</li>
-<li><code>i &lt;- expr</code>表示用i去遍历右边的表达式，该表达式的值一般为一个容器（collection）。</li>
-<li>函数按功能可以分为两类，计算用的函数是要计算和返回值的；另一种函数只是去做了一件事情（可以称作副作用），而它的返回值没有意义，这样的函数一般返回Unit类型。函数定义的时候，前者的定义和代码需要通过<code>=</code>连接，后者则省略了<code>=</code>。</li>
-<li>Scala中有一个‘懒值‘的概念，表现为变量声明时：</li>
+<li id="fn:1">
+<p>原文原词是personas/profiles，这两个词我实在不好把握到底应该怎么翻译，所以搞成这样四不像，希望大家有更好的翻译方式一定告诉我；<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>义无反顾的支持国货！<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 </ol>
+</div>
 
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">lazy</span> <span class="k">val</span> <span class="n">word</span> <span class="k">=</span> <span class="n">io</span><span class="o">.</span><span class="nc">Source</span><span class="o">.</span><span class="n">fromFile</span><span class="o">(</span><span class="s">&quot;/A/Reachable/Path/File.txt&quot;</span><span class="o">).</span><span class="n">mkString</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>这段代码在不被求值的时候是不会被初始化的，所以在代码在执行的过程中，如果word的值从来没有被用到，那么即使后面填的文件路径是错的也不会有异常被抛出来。</p>
 </div>
 
 
@@ -198,12 +210,12 @@
   
 
 
-<time datetime="2013-11-23T22:54:00+08:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2013</time>
+<time datetime="2014-03-12T20:25:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/scala/'>Scala</a>
+    <a class='category' href='/blog/categories/ux/'>UX</a>, <a class='category' href='/blog/categories/fan-yi/'>翻译</a>
   
 </span>
 
@@ -247,10 +259,8 @@ var jiathis_config={
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/11/11/a-interview-test/" title="Previous Post: 面试题一道：三天打渔两天晒网">&laquo; 面试题一道：三天打渔两天晒网</a>
+        <a class="basic-alignment left" href="/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs/" title="Previous Post: 【转译】每日UX速成课-5 of 31">&laquo; 【转译】每日UX速成课-5 of 31</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/11/27/scalalearningnote2/" title="Next Post: Scala学习笔记（2）">Scala学习笔记（2） &raquo;</a>
       
     </p>
   </footer>
@@ -382,8 +392,8 @@ var jiathis_config={
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://iceongrass.github.io/blog/2013/11/23/scalastudynote1/';
-        var disqus_url = 'http://iceongrass.github.io/blog/2013/11/23/scalastudynote1/';
+        var disqus_identifier = 'http://iceongrass.github.io/blog/2014/03/12/daily-ux-crash-course-6-of-31/';
+        var disqus_url = 'http://iceongrass.github.io/blog/2014/03/12/daily-ux-crash-course-6-of-31/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -94,8 +94,8 @@ categories: UX 翻译
 [4]:http://thehipperelement.com/post/72080847673/daily-ux-crash-course-3-of-31
 [5]:http://thehipperelement.com/post/72215356367/daily-ux-crash-course-4-of-31
 [6]:http://thehipperelement.com/post/72332896118/daily-ux-crash-course-5-of-31
-[7]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-6-of-31
-[8]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-7-of-31
+[7]:http://thehipperelement.com/post/72447829343/daily-ux-crash-course-6-of-31
+[8]:http://thehipperelement.com/post/72554568719/daily-ux-crash-course-7-of-31
 [9]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-8-of-31
 [10]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-9-of-31
 [11]:http://thehipperelement.com/post/71886924188/daily-ux-crash-course-10-of-31
@@ -124,8 +124,8 @@ categories: UX 翻译
 [34]:/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs
 [35]:/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs
 [36]:/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs
-[37]:/blog/2014/02/23/daily-ux-crash-course-5-of-31-chs
-[38]:http://iceongrass.com/blog/#
+[37]:/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs
+[38]:/blog/2014/03/12/daily-ux-crash-course-6-of-31-chs
 [39]:http://iceongrass.com/blog/#
 [40]:http://iceongrass.com/blog/#
 [41]:http://iceongrass.com/blog/#

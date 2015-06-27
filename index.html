@@ -9,7 +9,10 @@
   <meta name="author" content="iceongrass">
 
   
-  <meta name="description" content="数组专题 无论是什么编程语言，数组无疑是最重要的数据结构之一，这节主要是关于scala中数组操作的用法和与其他语言的不同。 ">
+  <meta name="description" content="正如营销人员有着一定的目标受众，UX设计师也有用户模型/特征1:基于调研的对用户的描述。不过我们说的跟这些个很不一样。
+所以我们今天聊点东西，关于： 建立用户角色模型 （如果您一不小心错过了第一课，您也许会更希望从头开始) 首先，让我们来确定下那些不是模型或特征： 人格的类型
+人口统计
+你的“ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,6 +32,8 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
 
   
   <script type="text/javascript">
@@ -48,14 +53,10 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">Ice Write Blog</a></h1>
-  
-    <h2>Running on the highway to Niubility!</h2>
-  
 </hgroup>
 
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss email">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
     <li><a href="iceongrass@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
@@ -74,11 +75,447 @@
   <li><a href="/blog/archives">Archives</a></li>
 </ul>
 
-</nav>
+</nav> -->
   <div id="main">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/03/12/daily-ux-crash-course-6-of-31/">【转译】每日UX速成课-6 of 31</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-12T20:25:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/03/12/daily-ux-crash-course-6-of-31/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>正如营销人员有着一定的目标受众，UX设计师也有用户模型/特征<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>:基于调研的对用户的描述。不过我们说的跟这些个很不一样。<br/>
+所以我们今天聊点东西，关于：</p></blockquote>
+
+<h2><strong>建立用户角色模型</strong></h2>
+
+<hr />
+
+<br>
+
+
+<p>（如果您一不小心错过了第一课，您也许会更希望<a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">从头开始</a>)</p>
+
+<h3><strong>首先，让我们来确定下那些不是模型或特征：</strong></h3>
+
+<p>人格的类型<br/>
+人口统计<br/>
+你的“品牌故事”中的角色<br/>
+由你的过往经验所产生的成见<br/>
+表面的或直观的偏见<br/>
+概念<br/>
+预言</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/03/12/daily-ux-crash-course-6-of-31/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs/">【转译】每日UX速成课-5 of 31</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-09T18:00:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>在用户体验的世界观里——尤其是在面对一些新鲜事物的时候——你需要从货真价实的活人身上获得一些信息。所以，今天我们来学习：</p></blockquote>
+
+<h2><strong>如何向人们提问</strong></h2>
+
+<hr />
+
+<p>（如果您一不小心错过了第一课，您也许会更希望<a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">从头开始</a>）</p>
+
+<h3><strong>三种提问的基本类型：</strong></h3>
+
+<p><strong>开放型问题</strong> —— “你如何描述我？” —— 这类问题的答案可以很宽泛，如果你需要收集你所能得到的所有的反馈的时候，这种问题比较合适。</p>
+
+<p><strong>导向型问题</strong> —— “我最性感的部位是哪里？” —— 这种问题把答案限定在一定的范围内。我举的例子里假设我有一些部位比较性感，尽管这不一定是真的！<em>要注意：</em>这类问题也有可能会把你一些你想要的答案排除在外！</p>
+
+<p><strong>封闭型问题</strong> —— “我的肘子和膝盖相比，哪个更性感些？” —— 这类问题提供了一个选择。是或者不是，这个或是那个。但是要谨记着：如果选项很蠢，那结果也不会聪明。
+ </div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs/">【转译】每日UX速成课-4 of 31</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-23T20:35:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2014</time>
+        
+         | <a href="/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>啊哈，用户！UX太阳系中的太阳，对咱们来说却是荆棘。<strong>永远不要责怪用户</strong>，这是UX界的一条神圣法则，即使——让我们多少坦诚些——有时候这种欲望真TND难以抑制。尽管如此，当你有了这样的感觉的时候恰恰说明你并没有理解你的用户，所以今天我们将要学习：</p></blockquote>
+
+<h2>什么是用户调研</h2>
+
+<hr />
+
+<p>（如果您一不小心错过了第一课，您也许会更希望<a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">从头开始</a>）</p>
+
+<p>不同的人们会说用户调研在进展过程中是处于不同平面的。有些人说应该调研先，另一些人有说应该先画些草图然后再开始，还有些人说应该先搞个原型机出来再做这个。</p>
+
+<p><strong>有些人、另一些人和还有些人，他们都是对的。</strong>用户调研这件事再任何时候都不回不合时宜。应该尽早做，经常做。</p>
+
+<p><strong>问题的关键不是什么时候做，而是怎么做。</strong>也可以说成，我们究竟想要从用户身上学到什么。</p>
+
+<p>通过对人们的研究，你通常能够得到两大类的信息：主观的和客观的。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs/">【转译】每日UX速成课-3 of 31</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-11T23:10:00+08:00" pubdate data-updated="true">Feb 11<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>用户体验设计是一个完整的过程，我们的这些课程只不过很粗糙的跟从着这个过程，但是下面这五个玩意儿你应该在整个过程中牢记在心：</p></blockquote>
+
+<h2>用户体验的五大要素：</h2>
+
+<h3>情绪，可用性，设计，产权和分析</h3>
+
+<hr />
+
+<p>（如果您一不小心错过了第一课，您也许会更希望<a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">从头开始</a>）</p>
+
+<p><strong>这五个要素中的随便一个都够拎出来写本书了，所以这里我会稍微过分的简化一丢丢。毕竟咱这不过是个速成课，不是维基百科哈。</strong></p>
+
+<p>尽管如此，说实话，我十分肯定那个在维基百科里写<a href="http://en.wikipedia.org/wiki/User_experience_design">UX词条</a>的哥们曾经听说过用户体验，从某件事情上……发生在某个年代……</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs/">【转译】每日UX速成课-2 of 31</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-10T21:54:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>当您想要开始做一个新的UX案子的时候——我指在您已经设计了任何东西之前——您需要先搞清楚您的目标。具体点说的话，这个目标应该是两个。您所有的努力都需要以这两个目标为前提，而且在您通往一个UX设计师的成功路上，没有什么比它们更重要的了：</p></blockquote>
+
+<h2><strong>用户目标和业务目标</strong></h2>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">【转译】每日UX速成课-1 of 31</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-09T20:18:00+08:00" pubdate data-updated="true">Feb 9<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>本课程为期一个月，目的在于能让更多的设计者（或者有抱负的设计者）学习如何进行用户体验设计。学习某项课程的最佳途径就是从头学习：</p></blockquote>
+
+<h2>神马是用户体验？</h2>
+
+<hr />
+
+<h3>每件事物都有用户体验，我们的工作并非“创造”用户体验，而是让用户得到“好”的体验。</h3>
+
+<p>那么神马才是我们所说的<strong>&ldquo;好&rdquo;</strong>的体验呢？</p>
+
+<p>人们一般会认为一个能够让用户<strong>开心</strong>的用户体验就是好的体验。您糊涂啊！如果取悦用户是我们唯一的目的，那我们只要丢给他们一些类似<a href="http://www.lolcats.com/">Lolcats</a>的卖萌网站或者说些<a href="http://emergencycompliment.com/">恭维的话</a>，之后就可以该干啥干啥去了。可是——尽管这不是我所能想象到的最坏的情况——您的老板八成不会为这样的结果买单。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/02/09/daily-ux-crash-course-1-of-31-chr/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/09/ux-crash-course-31-fundamentals-chr/">【转译】UX速成教程-概要</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-09T19:46:00+08:00" pubdate data-updated="true">Feb 9<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/02/09/ux-crash-course-31-fundamentals-chr/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前两天看到有人分享一个叫Joel Marsh的哥们写了一个为期31天的关于用户体验设计课程，文字短小精干，语言言简意赅，举例恰如其分，语言风趣幽默，于是产生了翻译过来与诸君共赏的想法。</p>
+
+<p>原文地址请戳：<font color="red"><a href="http://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals">戳我戳我</a></font></p>
+
+<h2>概要</h2>
+
+<blockquote><p>我2014年的新年愿望是让更多的人加入用户体验（UX）设计的行业。在过去的一月份里我每天发布一课，已经吸引了数以万计朋友们的关注。</p>
+
+<p>您能从下文的链接里找到全部的31节课程的内容。</p></blockquote>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/02/09/ux-crash-course-31-fundamentals-chr/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/20/usingbrewcask/">Brew cask，Mac党的福音</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-20T23:00:00+08:00" pubdate data-updated="true">Jan 20<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/01/20/usingbrewcask/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在用惯了ubuntu上的app-get来搞软件的便捷之后，就连Windows也有了360和QQ管家之类能帮助一键安装软件的工具。在被app-store的繁琐和不给力搞到七荤八素之后，我一直都想找一个Mac上类似的工具，可诸如easy_install， pip， curl都不尽如人意。</p>
+
+<p>终于，Mac党的福音来了！这就是brew cask（当当~当当当~~）</p>
+
+<p>安装巨简单，两条命令搞定（前提是你已经安装了Xcode，当然你要是没装，那就忽略了这篇文章吧，下面的内容真不适合您）：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ruby -e <span class="err">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install<span class="k">)</span>
+</span><span class='line'>brew tap phinze/homebrew-cask <span class="o">&amp;&amp;</span> brew install brew-cask
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/20/usingbrewcask/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -103,8 +540,7 @@
 
 <time datetime="2013-11-27T17:15:00+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2013</time>
         
-           | <a href="/blog/2013/11/27/scalalearningnote2/#disqus_thread"
-             data-disqus-identifier="http://iceongrass.github.io/blog/2013/11/27/scalalearningnote2/">Comments</a>
+         | <a href="/blog/2013/11/27/scalalearningnote2/#disqus_thread">Comments</a>
         
       </p>
     
@@ -149,8 +585,7 @@
 
 <time datetime="2013-11-23T22:54:00+08:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2013</time>
         
-           | <a href="/blog/2013/11/23/scalastudynote1/#disqus_thread"
-             data-disqus-identifier="http://iceongrass.github.io/blog/2013/11/23/scalastudynote1/">Comments</a>
+         | <a href="/blog/2013/11/23/scalastudynote1/#disqus_thread">Comments</a>
         
       </p>
     
@@ -170,149 +605,9 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/11/a-interview-test/">面试题一道：三天打渔两天晒网</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-11T15:03:00+08:00" pubdate data-updated="true">Nov 11<span>th</span>, 2013</time>
-        
-           | <a href="/blog/2013/11/11/a-interview-test/#disqus_thread"
-             data-disqus-identifier="http://iceongrass.github.io/blog/2013/11/11/a-interview-test/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>某天去某公司面试，被要求写一个程序。程序要求如下：</p>
-
-<p>某渔民张三，从2010年初开始打渔。该渔夫连续打三天渔后，要用两天时间晒网。要求写一段程序，判断某一日期当天张三是否要去打渔:</p>
-
-<pre><code>1. 打渔的话返回1，不打渔返回0；
-2. 要有异常处理。
-</code></pre>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/11/11/a-interview-test/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/11/scalahen-shen-qi/">Scala很神奇</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-11T01:25:00+08:00" pubdate data-updated="true">Nov 11<span>th</span>, 2013</time>
-        
-           | <a href="/blog/2013/11/11/scalahen-shen-qi/#disqus_thread"
-             data-disqus-identifier="http://iceongrass.github.io/blog/2013/11/11/scalahen-shen-qi/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>起初听到这个名词是在公司里，组内的技术大牛说这玩意是未来的语言。各种社区里也把scala吹的是神乎其神，可惜一整年忙于乱七八糟的事情一直没有机会深入了解。托csdn的福，没有让我赋闲在家的这段时间过于无聊，也开始接触了这门全新的语言。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/11/11/scalahen-shen-qi/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/20/first-try/">First Try</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-20T12:34:00+08:00" pubdate data-updated="true">Aug 20<span>th</span>, 2013</time>
-        
-           | <a href="/blog/2013/08/20/first-try/#disqus_thread"
-             data-disqus-identifier="http://iceongrass.github.io/blog/2013/08/20/first-try/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Github博客第一弹</h1>
-
-<h3>貌似应该各种牛逼的功能挨个用一遍</h3>
-
-<p>关于斜体和粗体，这是 <em>斜体</em>，这是 <strong>粗体</strong>。语法规则跟twiki还是很像的。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/08/20/first-try/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -323,8 +618,11 @@
     <section> 
   <h1>Category List</h1> 
   <ul id="categories"> 
-	<li class='category'><a href='/blog/categories/octopress/'>Octopress (1)</a></li>
+	<li class='category'><a href='/blog/categories/mactools/'>MacTools (1)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (1)</a></li>
 <li class='category'><a href='/blog/categories/scala/'>Scala (3)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>UX (7)</a></li>
+<li class='category'><a href='/blog/categories/翻译/'>翻译 (7)</a></li>
  
   </ul> 
 </section>
@@ -333,23 +631,23 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/11/27/scalalearningnote2/">Scala学习笔记（2）</a>
+        <a href="/blog/2014/03/12/daily-ux-crash-course-6-of-31/">【转译】每日UX速成课-6 of 31</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/11/23/scalastudynote1/">Scala 学习笔记（1）</a>
+        <a href="/blog/2014/03/09/daily-ux-crash-course-5-of-31-chs/">【转译】每日UX速成课-5 of 31</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/11/11/a-interview-test/">面试题一道：三天打渔两天晒网</a>
+        <a href="/blog/2014/02/23/daily-ux-crash-course-4-of-31-chs/">【转译】每日UX速成课-4 of 31</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/11/11/scalahen-shen-qi/">Scala很神奇</a>
+        <a href="/blog/2014/02/11/daily-ux-crash-course-3-of-31-chs/">【转译】每日UX速成课-3 of 31</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/08/20/first-try/">First Try</a>
+        <a href="/blog/2014/02/10/daily-ux-crash-course-2-of-31-chs/">【转译】每日UX速成课-2 of 31</a>
       </li>
     
   </ul>
@@ -420,7 +718,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - iceongrass -
+  Copyright &copy; 2014 - iceongrass -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -435,7 +733,7 @@
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
